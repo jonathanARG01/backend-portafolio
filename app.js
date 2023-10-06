@@ -1,16 +1,23 @@
+/* ============================================= */
+/*                 Importaciones                 */
+/* ============================================= */
+require('dotenv').config();
+const epxress = require('express');
+const cors = require('cors');
+const app = epxress();
+const { dbConnect } = require('./config/mongo');
 
-const express = require('express');
-const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hola Mundo!')
+app.use(cors());
+app.use(epxress.json());
+
+app.use('/', require('./app/routes'));
+
+dbConnect();
+
+app.listen(PORT, () => {
+    console.log('API lista por el puerto ', PORT)
 });
 
-app.get('/users', (req, res) => {
-    res.send('Usuarios !!!')
-});
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-});
