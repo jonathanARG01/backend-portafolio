@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 
 
@@ -12,15 +12,16 @@ const UserScheme = new mongoose.Schema(
         },
         email: {
             type: String
-        },
-
-        password: {
-            type: String
-        },
-        role: {
-            type: String,
-            default: 'user'
         }
+
+        // password: {
+        //     type: String
+        // },
+        // role: {
+        //     type: String,
+        //     default: 'user'
+        // }
+
     },
     {
         timestamps: true,
