@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 
 
@@ -22,4 +22,5 @@ const dbConnect = async () => {
 };
 
 
-module.exports = { dbConnect };
+
+export default dbConnect

@@ -1,36 +1,57 @@
-const express = require('express');
-const router = express.Router();
-const fs = require('fs');
+// import { Router } from 'express';
+// import { fileURLToPath } from 'url';
+// import { dirname } from 'path';
+// import { readdirSync } from 'fs';
 
 
-const pathRouter = `${ __dirname }`;
+
+// const router = Router();
+
+// // Url que hace referencia a index.js
+// const __filename = fileURLToPath(import.meta.url);
+
+// // URL al directorio 'routes'
+// const __dirname = dirname(__filename);
+
+// const pathRouter = __dirname;
 
 
-const removeExtension = (fileName) => {
-    return fileName.split('.').shift();
-}
+
+// const removeExtension = (fileName) => {
+//     return fileName.split('.').shift();
+// }
 
 
-fs.readdirSync(pathRouter).filter( (file) => {
+
+// readdirSync(pathRouter).filter( (file) => {
     
-    const fileWithOutExt = removeExtension(file)
-    const skip = ['index'].includes(fileWithOutExt)
+//     const fileWithOutExt = removeExtension(file);
+//     const skip = ['index'].includes(fileWithOutExt);
     
-    // Si es FALSE
-    if (!skip) {
+    
+//     // Si es FALSE
+//     if (!skip) {
+
+//         import(`./${fileWithOutExt}.js`).then((module) => {
+
+//             router.use(`/${fileWithOutExt}`, module.default);
+//             console.log('CARGAR RUTA ---->', fileWithOutExt);
+            
+//         }).catch((error) => {
+//             console.error('Error al cargar el módulo', fileWithOutExt, error);
+//         });
         
-        router.use(`/${fileWithOutExt}`, require(`./${fileWithOutExt}`));
+//     }
 
-        console.log('CARGAR RUTA ---->', fileWithOutExt);
-    }
-
-});
-
-router.get('*', (req, res) => {
-    res.status(404)
-    res.send({ error: 'Not found' })
-});
+// });
 
 
 
-module.exports = router;
+// router.get('*', (req, res) => {
+//     res.status(404);
+//     res.send({ error: 'Not found - 404' });
+// });
+
+
+
+// export default router;

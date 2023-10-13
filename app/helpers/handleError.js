@@ -1,16 +1,16 @@
 
 /**
- * ### MANEJADOR DE ERRORES HTTP ###
+ * ## MANEJADOR DE ERRORES HTTP ###
  * 
  * - Muestra el error
  * - Manda un status
  * - Manda un mensaje
  * 
- * # Es usado en los controladores de las rutas
+ * ### Es usado en los controladores de las rutas
  * 
  */
 
-const httpError = () => {
+export default httpError = () => {
     
     console.log( err );
     res.status( 500 );
@@ -19,5 +19,3 @@ const httpError = () => {
 }
 
 
-
-module.exports = { httpError }
