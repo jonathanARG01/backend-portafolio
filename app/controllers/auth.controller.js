@@ -2,7 +2,7 @@ import checkAuth from "../helpers/checkAuth.js";
 
 
 
-// GET Auth
+// GET Auth Publico
 export const getAuth = ( req, res ) => {
 
     res.send( "Endpoint publico" );
@@ -32,7 +32,7 @@ export const getAuthAutenticado = ( req, res ) => {
 
 
 
-// GET Auth Autorizado solo para administradores
+// GET Auth Autorizado (solo para administradores)
 export const getAuthAutorizado = ( req, res ) => {
 
     const { email, password } = req.body;
