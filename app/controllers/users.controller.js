@@ -1,5 +1,6 @@
 // import httpError from "../helpers/handleError";
 import createUserModel from '../models/users.model.js';
+import crypto from 'node:crypto';
 
 
 
@@ -16,6 +17,8 @@ export const getUsers = ( req, res ) => {
 // GET User
 export const getUser = () => {
     
+    
+
 }
 
 
@@ -30,13 +33,16 @@ export const postUser = async ( req, res) => {
         // Obtengo los datos desde el body
         const { name, age, email } = req.body;
 
-        const resDetail = await createUserModel({
-            name, age, email
+        const newUser = await createUserModel({
+            id: crypto.randomUUID(),
+            name,
+            age,
+            email
         });
 
-        console.log('USUARIO CREADO: ', resDetail);
+        console.log('USUARIO CREADO: ', newUser);
         
-        res.send({ data: resDetail });
+        res.send({ data: newUser });
 
     } catch ( e ) {
 

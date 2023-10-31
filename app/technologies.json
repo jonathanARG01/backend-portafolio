@@ -1,0 +1,107 @@
+[
+    {
+        "id": "001",
+        "name": "html",
+        "type": "markup",
+        "profile": "frontend",
+        "img": "html.png"
+    },
+    {
+        "id": "002",
+        "name": "css",
+        "type": "style sheet",
+        "profile": "frontend",
+        "img": "css.png"
+    },
+    {
+        "id": "003",
+        "name": "javascript",
+        "type": "programming language",
+        "profile": "frontend",
+        "img": "javascript.png"
+    },
+    {
+        "id": "004",
+        "name": "angular",
+        "type": "framework",
+        "profile": "frontend",
+        "img": "angular.png"
+    },
+    {
+        "id": "005",
+        "name": "react",
+        "type": "library",
+        "profile": "frontend",
+        "img": "react.png"
+    },
+    {
+        "id": "006",
+        "name": "vue",
+        "type": "framework",
+        "profile": "frontend",
+        "img": "vue.png"
+    },
+    {
+        "id": "007",
+        "name": "node",
+        "type": "runtime environment",
+        "profile": "backend",
+        "img": "node.png"
+    },
+    {
+        "id": "008",
+        "name": "bulma",
+        "type": "CSS framework",
+        "profile": "frontend",
+        "img": "bulma.png"
+    },
+    {
+        "id": "009",
+        "name": "bootstrap",
+        "type": "CSS framework",
+        "profile": "frontend",
+        "img": "bootstrap.png"
+    },
+    {
+        "id": "010",
+        "name": "mongo",
+        "type": "database",
+        "profile": "backend",
+        "img": "mongo.png"
+    },
+    {
+        "id": "011",
+        "name": "git",
+        "type": "version control system",
+        "profile": "fullstack",
+        "img": "git.png"
+    },
+    {
+        "id": "012",
+        "name": "sass",
+        "type": "CSS preprocessor",
+        "profile": "frontend",
+        "img": "sass.png"
+    },
+    {
+        "id": "013",
+        "name": "less",
+        "type": "CSS preprocessor",
+        "profile": "frontend",
+        "img": "less.png"
+    },
+    {
+        "id": "014",
+        "name": "ionic",
+        "type": "framework",
+        "profile": "fullstack",
+        "img": "ionic.png"
+    },
+    {
+        "id": "015",
+        "name": "wordpress",
+        "type": "content management system",
+        "profile": "fullstack",
+        "img": "wordpress.png"
+    }
+]
